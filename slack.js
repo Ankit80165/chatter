@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const socketio = require("socket.io");
 app.use(express.static(__dirname + "/public"));
-console.log(process.env);
+// console.log(process.env);
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/public" + "/chat.html");
 });
